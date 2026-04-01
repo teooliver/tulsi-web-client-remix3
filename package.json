@@ -1,0 +1,12 @@
+{
+  "name": "tulsi-web-client",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch app/server.js",
+    "start": "node app/server.js"
+  },
+  "dependencies": {
+    "remix": "^3.0.0-alpha.4"
+  }
+}
