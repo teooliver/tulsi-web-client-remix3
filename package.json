@@ -3,10 +3,16 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "node --watch app/server.js",
-    "start": "node app/server.js"
+    "dev": "tsx watch app/server.ts",
+    "start": "tsx app/server.ts",
+    "generate": "npx openapi-typescript http://localhost:3000/api-docs/openapi.json -o app/data/generated/api-types.ts"
   },
   "dependencies": {
     "remix": "^3.0.0-alpha.4"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2"
   }
 }

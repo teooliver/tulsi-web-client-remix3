@@ -6,6 +6,10 @@ let routes = route({
   home: "/",
   about: "/about",
   greet: "/greet/:name",
+  tasks: {
+    index: "/tasks",
+    show: "/tasks/:slug",
+  },
 });
 
 export default routes;
