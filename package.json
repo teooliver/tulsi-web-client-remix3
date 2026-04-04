@@ -5,13 +5,14 @@
   "scripts": {
     "dev": "tsx watch app/server.ts",
     "start": "tsx app/server.ts",
-    "generate": "npx openapi-typescript http://localhost:3000/api-docs/openapi.json -o app/data/generated/api-types.ts"
+    "generate": "dotenv -- npx openapi-typescript ${API_URL:-http://localhost:3000}/api-docs/openapi.json -o app/data/generated/api-types.ts"
   },
   "dependencies": {
     "remix": "^3.0.0-alpha.4"
   },
   "devDependencies": {
     "@types/node": "^25.5.0",
+    "dotenv-cli": "^11.0.0",
     "tsx": "^4.21.0",
     "typescript": "^6.0.2"
   }

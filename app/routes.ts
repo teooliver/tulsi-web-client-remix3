@@ -4,11 +4,9 @@ import { route } from "remix/fetch-router/routes";
 // This is the single source of truth for your app's URL structure.
 let routes = route({
   home: "/",
-  about: "/about",
-  greet: "/greet/:name",
   tasks: {
     index: "/tasks",
-    show: "/tasks/:slug",
+    details: "/tasks/:slug",
   },
 });
 

@@ -11,7 +11,8 @@
     "jsxImportSource": "remix/component",
     "outDir": "dist",
     "rootDir": ".",
-    "declaration": true
+    "declaration": true,
+    "allowImportingTsExtensions": true,
   },
-  "include": ["app/**/*.ts", "app/**/*.tsx"]
+  "include": ["app/**/*.ts", "app/**/*.tsx"],
 }

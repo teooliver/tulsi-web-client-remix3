@@ -1,1 +1,0 @@
-- Find a way of generating model types from the Rust project

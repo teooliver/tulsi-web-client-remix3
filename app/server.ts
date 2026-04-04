@@ -3,6 +3,7 @@ import { createRequestListener } from "remix/node-fetch-server";
 import router from "./router.js";
 
 // Wrap the router's fetch handler in a Node.js HTTP request listener.
+// @ts-ignore
 let listener = createRequestListener(router.fetch);
 
 let port = process.env.PORT || 3001;
